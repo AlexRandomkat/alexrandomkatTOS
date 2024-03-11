@@ -1,10 +1,6 @@
 \documentclass{article}
-\usepackage{amsfonts}
-\usepackage[fleqn]{mathtools}
-\usepackage{amssymb}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[a4paper, total={6.5in, 9in}]{geometry}
-\DeclareMathSizes{10}{10}{9}{7}
 \hyphenpenalty=10000
 
 \usepackage{hyperref}
@@ -25,7 +21,7 @@
 \newcommand{\ch}[1]{\text{#1}}
 \newcommand{\tdeg}{$^{\circ}$}
 \newcommand{\mdeg}{^{\circ}}
-\newcommand{\subs[1]}{\subsubsection{{\normalfont #1}}}
+\newcommand{\subs}[2][]{\subsubsection[#1]{\normalfont #2}}
 
 \newcommand{\dspt}{\displaystyle} 
 
@@ -89,47 +85,47 @@
 	\subsection{Commission Process}
 	\leftskip=2cm
 		
- 		\subsubsection[Character Description]{\normalfont The Client must send visual references of the character(s) when requesting a commission (not limited to ``ref sheets", but more than a written description is needed)}
+ 		\subs[Character Description]{The Client must send visual references of the character(s) when requesting a commission (not limited to ``ref sheets", but more than a written description is needed)}
 
-		\subsubsection[Work Description]{\normalfont Any desired ideas for the pose / dimensions / atmosphere / style / complexity / other similar aspects of the commission must be explained before the quote, as this is necessary information to estimate the difficulty of the work. Visual examples are preferred.}\label{workdesc}
+		\subs[Work Description]{Any desired ideas for the pose / dimensions / atmosphere / style / complexity / other similar aspects of the commission must be explained before the quote, as this is necessary information to estimate the difficulty of the work. Visual examples are preferred.}\label{workdesc}
 		
-		\subsubsection[Estimations and Quotes]{\normalfont All listed prices are merely estimates; the Artist will discuss the work as described in \ref{workdesc} with the Client to provide the Client with an individualized quote prior to payment.}
+		\subs[Estimations and Quotes]{All listed prices are merely estimates; the Artist will discuss the work as described in \ref{workdesc} with the Client to provide the Client with an individualized quote prior to payment.}
 
-		\subsubsection[WIPs]{\normalfont The Artist will send a rough sketch followed by a refined sketch (and, if applicable, a rough painting (together sufficient to depict anatomy, mood, and lighting)) at minimum. The Client is entitled to have more images of the work in progress (WIPs) upon request, up to a maximum of 3 requests per week.}
+		\subs[WIPs]{The Artist will send a rough sketch followed by a refined sketch (and, if applicable, a rough painting (together sufficient to depict anatomy, mood, and lighting)) at minimum. The Client is entitled to have more images of the work in progress (WIPs) upon request, up to a maximum of 3 requests per week.}
 
-		\subsubsection[Changes and Feedback]{\normalfont Major changes (e.g. to pose, perspective, or composition) are appropriate to suggest at the rough sketch stage, while minor changes (e.g. to expressions, limb lengths, head shapes, character color, lighting temperature, etc) should be suggested before/at the refined sketch / rough painting stage. The Artist reserves the right to refuse or charge for excessive requests for changes or changes requested out-of-line with the guidelines set here (with the exception of necessary changes due to negligence on the Artist's behalf, e.g. missing markings present on a referenced ref sheet).}
+		\subs[Changes and Feedback]{Major changes (e.g. to pose, perspective, or composition) are appropriate to suggest at the rough sketch stage, while minor changes (e.g. to expressions, limb lengths, head shapes, character color, lighting temperature, etc) should be suggested before/at the refined sketch / rough painting stage. The Artist reserves the right to refuse or charge for excessive requests for changes or changes requested out-of-line with the guidelines set here (with the exception of necessary changes due to negligence on the Artist's behalf, e.g. missing markings present on a referenced ref sheet).}
 
-		\subsubsection[Concluding Work]{\normalfont Once the signed final work is approved by the Client, the work is considered finished and the Artist is no longer obligated to change the work.}
+		\subs[Concluding Work]{Once the signed final work is approved by the Client, the work is considered finished and the Artist is no longer obligated to change the work.}
 
 	\leftskip=1cm
 	\subsection{Payment} 
 	\leftskip=2cm
-		\subsubsection[Payment for a Service]{\normalfont The Client is paying the Artist to create a digital artwork. No printing is offered. The Artist is not selling nor delivering products, physical nor digital. Upon completion of the work and payment in full, the Artist issues the Client limited copyright permissions to use the work for purposes as outlined in \ref{clientperms}.}
+		\subs[Payment for a Service]{The Client is paying the Artist to create a digital artwork. No printing is offered. The Artist is not selling nor delivering products, physical nor digital. Upon completion of the work and payment in full, the Artist issues the Client limited copyright permissions to use the work for purposes as outlined in \ref{clientperms}.}
 
-		\subsubsection[Acceptable Payment Methods]{\normalfont PayPal will be the payment platform; funds must be sent to the PayPal account alexrandomkat@gmail.com. Payments for the commission must be sent by one individual only.}
+		\subs[Acceptable Payment Methods]{PayPal will be the payment platform; funds must be sent to the PayPal account alexrandomkat@gmail.com. Payments for the commission must be sent by one individual only.}
 
-		\subsubsection[Payment Plans]{\normalfont All prices are in United States Dollars (USD). Quotes under \$100 must be paid in full for work to begin. Quotes \$100 or over may be paid half up-front before work begins, and half upon completion of the final work.}
+		\subs[Payment Plans]{All prices are in United States Dollars (USD). Quotes under \$100 must be paid in full for work to begin. Quotes \$100 or over may be paid half up-front before work begins, and half upon completion of the final work.}
 
-		\subsubsection[Public Recordkeeping]{\normalfont For transparency, the Client's public username(s), commission price, payment status, commission status, and a brief description of the commission may be published as an update to the log at the url linked in this section. Errors and future changes to this information agreed upon by both the Client and Artist will be corrected with another commit. The Client will be given the option to modify their participation in or opt-out of this public listing before being initially listed. \href{https://github.com/AlexRandomkat/alexrandomkatCommLog/blob/main/alexrandomkat-commlog-PUBLIC.pdf}{The listing is linked here.}}
+		\subs[Public Recordkeeping]{For transparency, the Client's public username(s), commission price, payment status, commission status, and a brief description of the commission may be published as an update to the log at the url linked in this section. Errors and future changes to this information agreed upon by both the Client and Artist will be corrected with another commit. The Client will be given the option to modify their participation in or opt-out of this public listing before being initially listed. \href{https://github.com/AlexRandomkat/alexrandomkatCommLog/blob/main/alexrandomkat-commlog-PUBLIC.pdf}{The listing is linked here.}}
 		
-		\subsubsection[Private Recordkeeping]{\normalfont The Artist will maintain an independent and private record of all communications with the Client relating to the commission, which will be kept for at least one year. Information from these records will only be shared to resolve disputes, should they arise, and only to the minimum necessary degree for resolution.}
+		\subs[Private Recordkeeping]{The Artist will maintain an independent and private record of all communications with the Client relating to the commission, which will be kept for at least one year. Information from these records will only be shared to resolve disputes, should they arise, and only to the minimum necessary degree for resolution.}
 		\hphantom{owo}
 		
 	\leftskip=1cm
 	\subsection{Cancellation and Refunds}
 	\leftskip=2cm
 
-		\subsubsection[At-will Termination]{\normalfont Both the Artist and Client may cancel the commission as long as the work is not finished and for any reason; the following terms outline the procedure for an amicable termination of this agreement premature to the completion of the final work.}
+		\subs[At-will Termination]{Both the Artist and Client may cancel the commission as long as the work is not finished and for any reason; the following terms outline the procedure for an amicable termination of this agreement premature to the completion of the final work.}
 		
-		\subsubsection[Cancellation by the Artist]{\normalfont A full refund will be sent if the Artist cancels the commission. The artist reserves the right to withhold all WIPs.}
+		\subs[Cancellation by the Artist]{A full refund will be sent if the Artist cancels the commission. The artist reserves the right to withhold all WIPs.}
 		
-		\subsubsection[Failure to Complete by Deadline]{\normalfont Should the Artist blatantly fail to bring the work close to the agreed-upon standard of artistic quality within 70 days (not including time spent waiting on or engaging with responses from the Client) of receiving an initial payment, the Client may cancel this commission for a full refund.}\label{failuretocomplete}
+		\subs[Failure to Complete by Deadline]{Should the Artist blatantly fail to bring the work close to the agreed-upon standard of artistic quality within 70 days (not including time spent waiting on or engaging with responses from the Client) of receiving an initial payment, the Client may cancel this commission for a full refund.}\label{failuretocomplete}
 		
-		\subsubsection[Cancellation by the Client]{\normalfont Should the Client cancel before any drawing has been done by the Artist and without application of \ref{failuretocomplete}, a refund will be given subject to a 5\% fee retained by the Artist. If work has begun, the final amount paid to the Artist must be reasonably proportionate to the fraction of work completed, and Artist will either provide a partial refund to or obtain additional payment from the Client to fulfill this condition.}
+		\subs[Cancellation by the Client]{Should the Client cancel before any drawing has been done by the Artist and without application of \ref{failuretocomplete}, a refund will be given subject to a 5\% fee retained by the Artist. If work has begun, the final amount paid to the Artist must be reasonably proportionate to the fraction of work completed, and Artist will either provide a partial refund to or obtain additional payment from the Client to fulfill this condition.}
 
-		\subsubsection[Unreachable Client]{\normalfont If for a period of 70 days, in spite of repeated communication attempts by the Artist, either communication, progressive dialogue, or due payment from the Client for the work stalls, the commission may be considered canceled by the Client at the discretion of the Artist. Should contact continue after such circumstances, only the Artist maintains the right to restore the commission's status.}
+		\subs[Unreachable Client]{If for a period of 70 days, in spite of repeated communication attempts by the Artist, either communication, progressive dialogue, or due payment from the Client for the work stalls, the commission may be considered canceled by the Client at the discretion of the Artist. Should contact continue after such circumstances, only the Artist maintains the right to restore the commission's status.}
 
-		\subsubsection[Age Restrictions]{\normalfont For NSFW artwork, the Client attests they are 18 years or older by commissioning. Should this be found to be untrue, the commission will be considered cancelled by the Client.}
+		\subs[Age Restrictions]{For NSFW artwork, the Client attests they are 18 years or older by commissioning. Should this be found to be untrue, the commission will be considered cancelled by the Client.}
 
 \leftskip=0cm
 \section{Artwork and Copyright}
@@ -138,25 +134,25 @@
 	\subsection{Artwork Contents}
 
 		\leftskip=2cm
-		\subsubsection[Artist AI Policy]{\normalfont At no point will the Artist incorporate visual elements output from  image-generating machine learning tools (here referred to as ``AI", e.g. models such as Stable Diffusion, DALL-E, DALL-E 2, Midjourney) beyond using such outputs as visual references.}
+		\subs[Artist AI Policy]{At no point will the Artist incorporate visual elements output from  image-generating machine learning tools (here referred to as ``AI", e.g. models such as Stable Diffusion, DALL-E, DALL-E 2, Midjourney) beyond using such outputs as visual references.}
 
-		\subsubsection[Artwork Dimensions]{\normalfont The Client must specify beforehand if specific dimensions are desired, otherwise the only requirement is that the smaller side of the artwork will be a minimum of 3000px.}
+		\subs[Artwork Dimensions]{The Client must specify beforehand if specific dimensions are desired, otherwise the only requirement is that the smaller side of the artwork will be a minimum of 3000px.}
 
-		\subsubsection[Signatures]{\normalfont All final works will be unobtrusively signed and dated with the year by the Artist.}
+		\subs[Signatures]{All final works will be unobtrusively signed and dated with the year by the Artist.}
 	\leftskip=1cm
 	\subsection{Copyright and Permissions}
 	
 		\leftskip=2cm
-		\subsubsection[Artist Copyright]{\normalfont The Artist retains full copyright to the final work and all WIPs, although the Artist will not sell images in the form of prints, charms, stickers, or other merchandise featuring the final work, or a derivative, in isolation without prior permission of the Client. However, the Artist may sell the work in a conglomerate with other works by the Artist (e.g. in an artbook). The Artist may livestream any part of the creation of the artwork.}
+		\subs[Artist Copyright]{The Artist retains full copyright to the final work and all WIPs, although the Artist will not sell images in the form of prints, charms, stickers, or other merchandise featuring the final work, or a derivative, in isolation without prior permission of the Client. However, the Artist may sell the work in a conglomerate with other works by the Artist (e.g. in an artbook). The Artist may livestream any part of the creation of the artwork.}
 		
-		\subsubsection[Commercial Use Restriction]{\normalfont All uses of the final work by the Client must be for noncommercial purposes. An exception is granted exclusively for the practice of ``character trading''; however, the Client must not make a profit off of the work upon sale.}\label{clientnoncommercial}
+		\subs[Commercial Use Restriction]{All uses of the final work by the Client must be for noncommercial purposes. An exception is granted exclusively for the practice of ``character trading''; however, the Client must not make a profit off of the work upon sale.}\label{clientnoncommercial}
 		\hphantom{owo}
 
-		\subsubsection[Client Limited Copyright]{\normalfont Upon completion of the final work and payment of the Artist in full, the Client may copy (physically and digitally), distribute, and display the final work under the restriction of \ref{clientnoncommercial}. The client may alter the work in accordance to \ref{clientderivative} and  \ref{clientai}. With the exception of any rights granted under \ref{clientai}, the Client may share any of their permissions to the final work with others.}\label{clientperms}
+		\subs[Client Limited Copyright]{Upon completion of the final work and payment of the Artist in full, the Client may copy (physically and digitally), distribute, and display the final work under the restriction of \ref{clientnoncommercial}. The client may alter the work in accordance to \ref{clientderivative} and  \ref{clientai}. With the exception of any rights granted under \ref{clientai}, the Client may share any of their permissions to the final work with others.}\label{clientperms}
 
-		\subsubsection[Derivative Works]{\normalfont The Client, without any assistance by AI, may create modifications to or derivative works of the final work after payment of the Artist in full; however, the Artist's signature and date must remain reasonably visible on any such items (with the exception of necessary crops to fit profile pictures, banners, etc, where the full display of the artwork is infeasible for aesthetic reasons). The Artist retains full copyright of any derivative works. The Client retains the same permissions outlined in \ref{clientperms} for derivative works, although the Artist reserves the right to revoke these permissions for derivative works they feel are objectionable.}\label{clientderivative}
+		\subs[Derivative Works]{The Client, without any assistance by AI, may create modifications to or derivative works of the final work after payment of the Artist in full; however, the Artist's signature and date must remain reasonably visible on any such items (with the exception of necessary crops to fit profile pictures, banners, etc, where the full display of the artwork is infeasible for aesthetic reasons). The Artist retains full copyright of any derivative works. The Client retains the same permissions outlined in \ref{clientperms} for derivative works, although the Artist reserves the right to revoke these permissions for derivative works they feel are objectionable.}\label{clientderivative}
 
-		\subsubsection[Client AI Policy]{\normalfont The Client may create modifications to or derivative works of the final work with the AI only with prior written permission from the Artist. The Artist reserves the right to charge extra for this permission, to limit its scope in any sense (including future retraction), or to refuse to grant it at all. If the Client has obtained the appropriate rights to modify the final work via machine learning tools, the Client holds the same permissions as specified in 113 towards the modified or derivative work produced using assistance from AI. If the Client intends for a 3rd party to modify the final work with the assistance of AI, the Client must specify this fact in a request to the Artist. The 3rd party may then function as a stand-in for the Client in this subsection}\label{clientai}\hphantom{owo}
+		\subs[Client AI Policy]{The Client may create modifications to or derivative works of the final work with the AI only with prior written permission from the Artist. The Artist reserves the right to charge extra for this permission, to limit its scope in any sense (including future retraction), or to refuse to grant it at all. If the Client has obtained the appropriate rights to modify the final work via machine learning tools, the Client holds the same permissions as specified in 113 towards the modified or derivative work produced using assistance from AI. If the Client intends for a 3rd party to modify the final work with the assistance of AI, the Client must specify this fact in a request to the Artist. The 3rd party may then function as a stand-in for the Client in this subsection}\label{clientai}\hphantom{owo}
 
 \begin{center}
 Should the Client breach these Terms, the Artist has the right to pursue any or all of the following remedies: (1) terminate the agreement, (2) withhold all files, artwork, source, commitments, or any other service to be performed by the Artist for Client, (3) bring legal action.\\\hcm
